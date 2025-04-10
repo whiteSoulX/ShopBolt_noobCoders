@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* Container for the login and registration forms */
+/* .loginframe {
+    visibility: visible; 
+    opacity: 1; 
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 50px auto; 
+} */
+
+.loginframe {
+    visibility: visible;
+    opacity: 1;
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 50px auto;
+}
+
+/* Login form with background image */
+.form.login {
+    width: 100%;
+    padding: 40px;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+    background-image: url('/assets/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+/* Registration form with background image */
+.form.register {
+    position: absolute;
+    transform: translateX(400px);
+    transition: transform 0.3s ease;
+    width: 100%;
+    padding: 40px;
+    background-image: url('/assets/images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+
+
+/* Login form styling */
+.loginframe .form.login {
+    width: 100%;
+    padding: 40px;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
+}
+
+/* Registration form styling */
+.loginframe .form.register {
+    position: absolute;
+    transform: translateX(400px); /* Move registration form out of view */
+    transition: transform 0.3s ease;
+    width: 100%;
+    padding: 40px;
+}
+
+/* Move registration form into view when active */
+.loginframe.active .form.register {
+    transform: translateX(0);
+}
+
+/* Move login form out of view when registration is active */
+.loginframe.active .form.login {
+    transform: translateX(-400px);
+}
+
+/* Form title styling */
+.form h2 {
+    font-size: 2em;
+    color: rgb(46, 43, 43);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input field container */
+.logininput {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #162938;
+    margin: 30px 0;
+}
+
+/* Input field label */
+.logininput label {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #12232f;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Move label up when email input is focused or has content */
+.logininput input[type="email"]:focus ~ label,
+.logininput input[type="email"]:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 0.85em;
+    color: black;
+}
+.logininput input[type="text"]:focus ~ label,
+.logininput input[type="text"]:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 0.85em;
+    color: black;
+}
+
+.logininput input[type="password"]:focus ~ label,
+.logininput input[type="password"]:not(:placeholder-shown) ~ label {
+    top: -10px;
+    font-size: 0.85em;
+    color: black;
+}
+
+/* Input field styling */
+.logininput input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #000000;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+/* Icon inside input fields */
+.logininput .icon {
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #162938;
+    line-height: 57px;
+}
+
+/* Remember me and forgot password section */
+.rememberme-forgot {
+    font-size: 0.9em;
+    color: #ffffff;
+    font-weight: 500;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rememberme-forgot label input {
+    accent-color: #706666;
+    margin-right: 3px;
+}
+
+.rememberme-forgot a {
+    color:red;
+    text-decoration: none;
+}
+
+.rememberme-forgot a:hover {
+    text-decoration: underline;
+}
+
+/* Submit button styling */
+.btnsubmit {
+    width: 100%;
+    height: 45px;
+    background: black;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fff;
+    font-weight: 500;
+    transition: background 0.3s ease;
+}
+
+.btnsubmit:hover {
+    background: #333;
+}
+
+/* Register new account message */
+.registernewid {
+    font-size: 0.9em;
+    color: #ffffff;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.registernewid p a {
+    color: rgb(55, 255, 255);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.registernewid p a:hover {
+    text-decoration: underline;
+}

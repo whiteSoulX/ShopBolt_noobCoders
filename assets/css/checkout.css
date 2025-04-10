@@ -1,0 +1,28 @@
+/*CheckOut*/
+
+#checkout-form .checkout-small-element{
+    display: inline-block;
+    width: 48%;
+    margin: 10px auto;
+}
+
+#checkout-form .checkout-large-element{
+    width: 97%;
+}
+
+#checkout-form .checkout-btn-container{
+    margin: 10px;
+    text-align: right;
+    margin-right: 40px;
+}
+
+#checkout-form #checkout-btn{
+    color: #fff;
+    background-color: #fb774b;
+}
+
+/*Contact css*/
+
+#contact span{
+    color: #fb774b;
+}
