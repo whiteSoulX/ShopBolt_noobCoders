@@ -21,16 +21,16 @@
 
       <header>
         <nav class="navbar">
-            <a href="index.html">Home</a>
+            <a href="index.php">Home</a>
             <a href="about.html">About</a>
 
             <a href="service.html">Services</a>
             <a href="shop.html">Shop</a>
 
             <a href="contact.html">Contact</a>
-            <a href="login.html">Sign In</a>
-            <a href="account.html">Account</a>
-            <a href="cart.html">Cart</a>
+            <a href="login.php">Sign In</a>
+            <a href="account.php">Account</a>
+            <a href="cart.php">Cart</a>
         </nav>
         <a href="index.html" class="nav_logo">
           <img src="assets/images/logo.png" alt="Logo">

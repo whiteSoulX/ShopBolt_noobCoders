@@ -1,22 +1,184 @@
-/* account form css*/
+/* Account Section */
+.account-section {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+}
 
-#account-form{
-    width: 50%;
-    margin: 35p auto;
-    text-align: center;
+/* Account Info */
+.account-info {
     padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
 }
 
-#account-form input{
-    margin: 5px auto;
+.account-info:hover {
+    transform: translateY(-5px);
 }
 
-#account-form #change-pass-btn{
-    color: #fff;
-    background-color: #fb774b;
+.account-info h3 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
 }
 
-.account-info #order-btn,#logout-btn{
+.account-info hr {
+    width: 60px;
+    border-top: 2px solid #fb774b;
+    margin: 10px auto;
+}
+
+.account-details {
+    margin-top: 20px;
+}
+
+.account-field {
+    font-size: 1.1rem;
+    color: #555;
+    margin: 10px 0;
+}
+
+.account-field span {
+    font-weight: 600;
+    color: #333;
+}
+
+.account-link {
+    display: inline-block;
     color: #fb774b;
     text-decoration: none;
+    font-size: 1rem;
+    margin: 8px 0;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.account-link:hover {
+    color: #d95f3a;
+    transform: scale(1.05);
+}
+
+/* Account Form */
+.account-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.account-form:hover {
+    transform: translateY(-5px);
+}
+
+#account-form {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#account-form h3 {
+    font-size: 1.8rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#account-form hr {
+    width: 60px;
+    border-top: 2px solid #fb774b;
+    margin: 10px auto;
+}
+
+#account-form .form-group {
+    margin-bottom: 20px;
+}
+
+#account-form label {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#account-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#account-form input[type="password"]:focus {
+    border-color: #fb774b;
+    box-shadow: 0 0 5px rgba(251, 119, 75, 0.3);
+    outline: none;
+}
+
+#account-form #change-pass-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #fb774b;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#account-form #change-pass-btn:hover {
+    background-color: #d95f3a;
+    transform: scale(1.02);
+}
+
+#account-form #change-pass-btn:active {
+    transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .account-section {
+        padding: 20px 10px;
+    }
+
+    .account-info,
+    .account-form {
+        margin-bottom: 20px;
+    }
+
+    #account-form {
+        max-width: 100%;
+    }
+
+    .account-info h3,
+    #account-form h3 {
+        font-size: 1.5rem;
+    }
+
+    .account-field {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .account-info,
+    .account-form {
+        padding: 15px;
+    }
+
+    #account-form input[type="password"] {
+        padding: 8px;
+        font-size: 0.9rem;
+    }
+
+    #account-form #change-pass-btn {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
 }
