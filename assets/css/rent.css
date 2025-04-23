@@ -5,6 +5,8 @@
             font-family: Arial, sans-serif;
         }
 
+        
+
         body {
             background-color: #f4f4f9;
             padding: 20px;
@@ -15,7 +17,7 @@
         }
 
         h1, h2 {
-            color: #333;
+            color: #ffffff;
             text-align: center;
             margin-bottom: 20px;
         }
@@ -84,7 +86,9 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            color: black;
         }
+        
 
         .add-to-cart button {
             background-color: transparent;
@@ -152,7 +156,7 @@
         .modal-content button {
             width: 100%;
             padding: 10px;
-            background-color: #007bff;
+            background-color: #9ebd18;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -164,7 +168,7 @@
         }
 
         .cart, .user-info {
-            background-color: #fff;
+            background-color: #0c967f;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -175,16 +179,17 @@
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
+            background-color: #666;
         }
 
         .cart th, .cart td {
             padding: 10px;
             text-align: left;
-            border-bottom: 1px solid #ddd;
+            border-bottom: 1px solid #000000;
         }
 
         .cart th {
-            background-color: #f8f9fa;
+            background-color: #000000;
         }
 
         .cart .product-image {
@@ -222,7 +227,7 @@
 
         .user-info button {
             padding: 10px;
-            background-color: #007bff;
+            background-color: #fc310e;
             color: #fff;
             border: none;
             border-radius: 5px;
@@ -230,7 +235,7 @@
         }
 
         .user-info button:hover {
-            background-color: #0056b3;
+            background-color: #000000;
         }
 
         @media (max-width: 768px) {
